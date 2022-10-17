@@ -13,14 +13,12 @@ pub use hook::{run_hooks, SceneHook, SceneHooked};
 #[derive(Bundle)]
 pub struct HookedSceneBundle {
     pub hook: SceneHook,
-    #[bundle]
     pub scene: SceneBundle,
 }
 
 #[derive(Bundle)]
 pub struct HookedDynamicSceneBundle {
     pub hook: SceneHook,
-    #[bundle]
     pub scene: DynamicSceneBundle,
 }
 
